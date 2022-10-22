@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Gas Price Evaluator</title>
+    </head>
+    <body>
+        <div class="car_details">
+            <h2> Enter information </h2>
+        <form action="" method="post">
+            <p>
+                {{form.mpg.label}}<br>
+                {{form.mpg(size=30)}}
+            </p>
+            <p>
+                {{form.fueltype.label}} (Regular, Premium)<br>
+                {{form.fueltype(size=50)}}
+            </p>
+            <p>
+                {{form.address.label}} (Address, City, State, Zip Code)<br>
+                {{form.address(size=50)}}
+            </p>
+            <label for="exampleFormControlFile2">Choose radius in miles</label>
+        <select name="radii">
+          {% for radius in radii %}
+            <option value="{{ radius }}" SELECTED>{{ radius }}</option>
+          {% endfor %}     
+        </select>
+            <p>{{form.submit()}}</p>
+        </form>
+        </div>
+    </body>
+</html>

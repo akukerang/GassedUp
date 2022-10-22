@@ -1,0 +1,389 @@
+[
+    {
+        "id": 86076,
+        "lat": 33.811218,
+        "lng": -84.475942,
+        "price": "3.79",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 87980,
+        "lat": 33.7469,
+        "lng": -84.349552,
+        "price": "3.19",
+        "iscash": true,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 88574,
+        "lat": 33.740977,
+        "lng": -84.417777,
+        "price": "3.39",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 194733,
+        "lat": 33.799863,
+        "lng": -84.41637,
+        "price": "3.15",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 198019,
+        "lat": 33.8209,
+        "lng": -84.455113,
+        "price": "3.15",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 200450,
+        "lat": 33.781161,
+        "lng": -84.536263,
+        "price": "3.16",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 200999,
+        "lat": 33.781247,
+        "lng": -84.40782,
+        "price": "3.19",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 202310,
+        "lat": 33.80908,
+        "lng": -84.36604,
+        "price": "3.44",
+        "iscash": true,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 106920,
+        "lat": 33.76565,
+        "lng": -84.5296,
+        "price": "3.19",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 114655,
+        "lat": 33.715855,
+        "lng": -84.349486,
+        "price": "3.24",
+        "iscash": true,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 125799,
+        "lat": 33.74348,
+        "lng": -84.40346,
+        "price": "3.59",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 128239,
+        "lat": 33.77394,
+        "lng": -84.371202,
+        "price": "3.49",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 131479,
+        "lat": 33.799457,
+        "lng": -84.513166,
+        "price": "3.16",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 134180,
+        "lat": 33.724514,
+        "lng": -84.42112,
+        "price": "3.39",
+        "iscash": true,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 138972,
+        "lat": 33.752725,
+        "lng": -84.349528,
+        "price": "3.19",
+        "iscash": true,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 142261,
+        "lat": 33.70876,
+        "lng": -84.559467,
+        "price": "3.23",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 142772,
+        "lat": 33.764416,
+        "lng": -84.372215,
+        "price": "3.59",
+        "iscash": true,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 142773,
+        "lat": 33.770969,
+        "lng": -84.371427,
+        "price": "3.49",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 146621,
+        "lat": 33.841804,
+        "lng": -84.502952,
+        "price": "3.16",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 147121,
+        "lat": 33.722806,
+        "lng": -84.500981,
+        "price": "3.39",
+        "iscash": true,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 158540,
+        "lat": 33.800922,
+        "lng": -84.425709,
+        "price": "3.18",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 160145,
+        "lat": 33.772484,
+        "lng": -84.382055,
+        "price": "3.49",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 162625,
+        "lat": 33.786248,
+        "lng": -84.490445,
+        "price": "3.16",
+        "iscash": true,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 164841,
+        "lat": 33.714163,
+        "lng": -84.368787,
+        "price": "3.14",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 190328,
+        "lat": 33.773068,
+        "lng": -84.410773,
+        "price": "3.25",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 190537,
+        "lat": 33.741328,
+        "lng": -84.360972,
+        "price": "3.19",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 954,
+        "lat": 33.825453,
+        "lng": -84.362404,
+        "price": "3.23",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 7477,
+        "lat": 33.827757,
+        "lng": -84.491134,
+        "price": "3.16",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 11819,
+        "lat": 33.737834,
+        "lng": -84.43478,
+        "price": "3.29",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 16021,
+        "lat": 33.78177,
+        "lng": -84.40749,
+        "price": "3.16",
+        "iscash": true,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 30204,
+        "lat": 33.78618,
+        "lng": -84.397847,
+        "price": "3.49",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 30205,
+        "lat": 33.79707,
+        "lng": -84.369271,
+        "price": "3.34",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 30206,
+        "lat": 33.757368,
+        "lng": -84.382553,
+        "price": "3.29",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 38986,
+        "lat": 33.806774,
+        "lng": -84.413034,
+        "price": "3.49",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 42084,
+        "lat": 33.796392,
+        "lng": -84.369314,
+        "price": "3.29",
+        "iscash": true,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 42086,
+        "lat": 33.722751,
+        "lng": -84.349015,
+        "price": "3.19",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 42284,
+        "lat": 33.812252,
+        "lng": -84.559432,
+        "price": "3.19",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 70014,
+        "lat": 33.814699,
+        "lng": -84.561682,
+        "price": "3.18",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 70276,
+        "lat": 33.849443,
+        "lng": -84.429663,
+        "price": "3.79",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 75642,
+        "lat": 33.729729,
+        "lng": -84.415882,
+        "price": "3.39",
+        "iscash": true,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 42049,
+        "lat": 33.856111,
+        "lng": -84.382864,
+        "price": "3.89",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 42065,
+        "lat": 33.706646,
+        "lng": -84.457929,
+        "price": "3.19",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    },
+    {
+        "id": 81771,
+        "lat": 33.844311,
+        "lng": -84.500763,
+        "price": "3.16",
+        "iscash": false,
+        "tme": "",
+        "brand_id": 0
+    }
+]

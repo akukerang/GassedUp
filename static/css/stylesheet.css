@@ -1,0 +1,34 @@
+body {
+    background-color: lightblue;
+    font-family: Verdana, sans-serif;
+}
+
+div{
+    border:1px solid black;
+}
+
+.car_details {
+    padding:2%;
+
+
+}
+
+input{
+    margin:1%;
+}
+.spotlightStation {
+    padding:1%;
+}
+h2{
+    margin:auto;
+    border-bottom: 1px,black;
+}
+h3, h4{
+    display:inline;
+}
+th {
+    text-align:left;
+}
+
+
+

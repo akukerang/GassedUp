@@ -2,7 +2,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Gas Price Evaluator</title>
+        <link rel="stylesheet" href="static/css/stylesheet.css">
+        <title>Gassed Up</title>
     </head>
     <body>
         <div class="car_details">
@@ -13,7 +14,7 @@
                 {{form.mpg(size=30)}}
             </p>
             <p>
-                {{form.fueltype.label}} (Regular, Premium)<br>
+                {{form.fueltype.label}} (Regular/Midgrade/Premium/Diesel)<br>
                 {{form.fueltype(size=50)}}
             </p>
             <p>
@@ -21,17 +22,27 @@
                 {{form.address(size=50)}}
             </p>
             <label for="exampleFormControlFile2">Choose radius in miles</label>
-        <select name="radii">
-          {% for radius in radii %}
-            <option value="{{ radius }}" SELECTED>{{ radius }}</option>
-          {% endfor %}     
-        </select>
-            <p>{{form.submit()}}</p>
+            <select name="radii">
+                {% for radius in radii %}
+                    <option value="{{ radius }}" SELECTED>{{ radius }}</option>
+                {% endfor %}     
+            </select></br>
+            <input type="submit" name="submit_button" value="Submit"> 
         </form>
         </div>
-        {% for table in tables %}
-            {{titles[loop.index]}}
-            {{ table|safe }}
-        {% endfor %}
+        
+        <div class = "spotlightStation">
+            <h2>Best Deal</h2>
+            <h3>Address: </h3><h4>{{ stationList['address'].iloc[0] }}</h4></br>
+            <h3>Distance: </h3><h4>{{ stationList['distance'].iloc[0] }} miles</h4></br>
+            <h3>Price: </h3><h4>${{ stationList['price'].iloc[0] }}</h4></br>      <h3>Adjusted Price:</h3> <h4>${{stationList['calcPrice'].iloc[0]}}</h4></br>
+        </div>
+
+        <div class = "table">
+            {% for table in tables %}
+                {{titles[loop.index]}}
+                {{ table|safe }}
+            {% endfor %}
+        </div>
     </body>
 </html>

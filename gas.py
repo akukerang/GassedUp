@@ -1,6 +1,7 @@
 # import requests
 from itertools import filterfalse
 from re import X
+import math
 import geocoder
 import math
 import requests
@@ -31,7 +32,6 @@ def getStationList(range, latitude, longitude, fuelTypeId, carMPG):
     minLng = round(change_in_longitude(longitude, minLat,-(range/2)), 4) #minLng
     maxLat = round(change_in_latitude(latitude, range/2),4) #maxLat
     maxLng = round(change_in_longitude(longitude, maxLat,range/2),4) #maxLng
-    print(range, latitude, longitude, fuelTypeId, carMPG)
     gasParam = {
         "minLat" : minLat,
         "minLng" : minLng,
@@ -51,16 +51,16 @@ def getStationList(range, latitude, longitude, fuelTypeId, carMPG):
     df = pd.json_normalize(filteredPrimary) # Adds to dataframe
     df2 = pd.json_normalize(filteredSecondary)
     results = pd.concat([df,df2],ignore_index = True) #Merges primary stations and secondary stations
-    calculatedDistance = pd.DataFrame(columns=['id','lat','long','price','distance','calcPrice', 'address'])
+    calculatedDistance = pd.DataFrame(columns=['id', 'price','distance','calcPrice', 'address'])
     locator = Nominatim(user_agent="GassedUp")
     for index, rows in results.iterrows():
         distance = round(geodesic((rows['lat'],rows['lng']),(latitude, longitude)).miles,2)
         calculatedPrice = round(((float(rows['price']) * distance) / float(carMPG))+float(rows['price']),2)
         coords = str(rows['lat']) + ", " + str(rows['lng'])
         location = locator.reverse(coords)
-        calculatedDistance.loc[index] = [rows['id'], rows['lat'], rows['lng'], rows['price'], distance, calculatedPrice, location.address]
+        calculatedDistance.loc[index] = [rows['id'], rows['price'], distance, calculatedPrice, location.address]
     calculatedDistance = calculatedDistance.sort_values(by=['calcPrice'])
-    return calculatedDistance
+    calculatedDistance.to_csv('stationList.csv', index=False)
 
 
 def getLocation(address):

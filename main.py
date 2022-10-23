@@ -3,6 +3,7 @@ from forms import CarForm
 from gas import *
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
+import pandas as pd
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "thesussys"
 
@@ -23,8 +24,10 @@ def home():
             fuelTypeId = '1'
         elif (result.get('fueltype') == 'Premium' or result.get('fueltype') == 'premium'):
             fuelTypeId = '2'
-        getStationList(float(result.get('radii')), float(addrLatitude), float(addrLongitude), fuelTypeId, float(result.get('mpg')))
-    return render_template("index.html",form=form, radii=radii)
+        tableData = getStationList(float(result.get('radii')), float(addrLatitude), float(addrLongitude), fuelTypeId, float(result.get('mpg')))
+    return render_template("index.html",form=form, radii=radii, tables=[tableData.to_html(classes='data')], titles=tableData.columns.values)
+
+
 
 if __name__ == '__main__':
     app.run()

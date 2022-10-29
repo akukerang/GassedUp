@@ -5,7 +5,6 @@ import math
 import geocoder
 import math
 import requests
-import json
 import pandas as pd
 from geopy.distance import geodesic
 from geopy.geocoders import Nominatim

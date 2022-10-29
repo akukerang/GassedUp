@@ -1,14 +1,10 @@
 # import requests
-from itertools import filterfalse
-from re import X
 import math
-import geocoder
 import math
 import requests
 import pandas as pd
 from geopy.distance import geodesic
 from geopy.geocoders import Nominatim
-from geopy.extra.rate_limiter import RateLimiter
 
 
 

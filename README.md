@@ -6,3 +6,12 @@ To run:
 - Run main.py. From your browser, go to the ip of the Flask server.
 - The default location should be somewhere around your actual area.
 - To be more precise, use your actual location.
+
+Required Libaries:
+- Pandas
+- Requests
+- Flask
+- Flask_wtf
+- wtforms
+- Geocoder
+- Geopy

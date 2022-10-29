@@ -1,7 +1,6 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField
+from wtforms import StringField
 from geopy.geocoders import Nominatim
-from geopy.extra.rate_limiter import RateLimiter
 import geocoder
 
 g = geocoder.ip('me')

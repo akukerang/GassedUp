@@ -7,7 +7,10 @@ g = geocoder.ip('me')
 coords = str(g.lat) + ", " + str(g.lng)
 locator = Nominatim(user_agent="GassedUp")
 location = locator.reverse(coords)
-class CarForm(FlaskForm):
+
+
+class GasForm(FlaskForm):
+    model = StringField('Car Model')
     mpg = StringField("MPG")
     fueltype = StringField("FuelType")
     address = StringField('Address',default=str(location))

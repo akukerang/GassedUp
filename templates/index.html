@@ -10,6 +10,16 @@
             <h2> Enter information </h2>
         <form action="" method="post">
             <p>
+                {{form.model.label}}<br>
+                {{form.model(list="id_datalist")}}
+                <datalist id="id_datalist">
+                    {% for makes in carMakes %}
+                    <option value="{{ makes }}">
+                    {% endfor %}
+                </datalist>
+            </p>
+            <input type="submit" name="submit_button" value="Submit Model"> 
+            <p>
                 {{form.mpg.label}}<br>
                 {{form.mpg(size=30)}}
             </p>

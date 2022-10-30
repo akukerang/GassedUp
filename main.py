@@ -44,7 +44,7 @@ def home():
 
     return render_template("index.html", 
     form=form, radii=radii, carMakes = cars.carModel.values.tolist(),
-    tables=[stationList.to_html(escape=False)], titles=stationList.columns.values, stationList = stationList)
+    tables=[stationList.to_html(escape=False,index_names=False)],  stationList = stationList)
 
 
 

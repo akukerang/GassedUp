@@ -1,1 +1,0 @@
-    cars = pd.read_csv('vehicles.csv')

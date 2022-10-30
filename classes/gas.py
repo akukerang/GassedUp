@@ -1,4 +1,3 @@
-# import requests
 import math
 import math
 import requests
@@ -55,7 +54,7 @@ def getStationList(range, latitude, longitude, fuelTypeId, carMPG):
         location = locator.reverse(coords)
         calculatedDistance.loc[index] = [rows['id'], rows['price'], distance, calculatedPrice, location.address]
     calculatedDistance = calculatedDistance.sort_values(by=['calcPrice'])
-    calculatedDistance.to_csv('stationList.csv', index=False)
+    calculatedDistance.to_csv('csv/stationList.csv', index=False)
 
 
 def getLocation(address):

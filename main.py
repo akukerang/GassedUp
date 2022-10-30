@@ -1,8 +1,7 @@
 from flask import Flask, render_template, request
-from forms import GasForm
-from gas import *
+from classes.forms import GasForm
+from classes.gas import *
 from geopy.geocoders import Nominatim
-from geopy.extra.rate_limiter import RateLimiter
 import pandas as pd
 
 app = Flask(__name__)
@@ -16,8 +15,8 @@ def getLocation(address):
 def home():
     form = GasForm()
     radii = [25,15,10,5]
-    stationList = pd.read_csv('stationList.csv')
-    cars = pd.read_csv('vehicles.csv')
+    stationList = pd.read_csv('csv/stationList.csv')
+    cars = pd.read_csv('csv/vehicles.csv')
     if request.method == 'POST':
         if request.form['submit_button'] == 'Submit':
             result = request.form
@@ -34,7 +33,7 @@ def home():
             else:
                 fuelTypeId = '1'
             getStationList(float(result.get('radii')), float(addrLatitude), float(addrLongitude), fuelTypeId, float(result.get('mpg')))
-            stationList = pd.read_csv('stationList.csv')
+            stationList = pd.read_csv('csv/stationList.csv')
         elif request.form['submit_button'] == 'Get Data':
             result = request.form
             if result.get('model') != '':

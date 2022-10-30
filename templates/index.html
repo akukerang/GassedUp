@@ -17,15 +17,16 @@
                     <option value="{{ makes }}">
                     {% endfor %}
                 </datalist>
+                <input type="submit" name="submit_button" value="Get Data"> 
             </p>
-            <input type="submit" name="submit_button" value="Submit Model"> 
+
             <p>
                 {{form.mpg.label}}<br>
-                {{form.mpg(size=30)}}
+                {{form.mpg(size=10)}}
             </p>
             <p>
                 {{form.fueltype.label}} (Regular/Midgrade/Premium/Diesel)<br>
-                {{form.fueltype(size=50)}}
+                {{form.fueltype(size=20)}}
             </p>
             <p>
                 {{form.address.label}} (Address, City, State, Zip Code)<br>

@@ -16,6 +16,10 @@ div{
 input{
     margin:1%;
 }
+
+label{
+    padding-right: .4%;
+}
 .spotlightStation {
     padding:1%;
 }

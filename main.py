@@ -4,6 +4,7 @@ from gas import *
 from geopy.geocoders import Nominatim
 from geopy.extra.rate_limiter import RateLimiter
 import pandas as pd
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "amongus"
 def getLocation(address):
@@ -14,7 +15,7 @@ def getLocation(address):
 @app.route('/', methods=['GET', 'POST'])
 def home():
     form = GasForm()
-    radii = [5, 10, 15, 25]
+    radii = [25,15,10,5]
     stationList = pd.read_csv('stationList.csv')
     cars = pd.read_csv('vehicles.csv')
     if request.method == 'POST':
@@ -34,14 +35,14 @@ def home():
                 fuelTypeId = '1'
             getStationList(float(result.get('radii')), float(addrLatitude), float(addrLongitude), fuelTypeId, float(result.get('mpg')))
             stationList = pd.read_csv('stationList.csv')
-        elif request.form['submit_button'] == 'Submit Model':
+        elif request.form['submit_button'] == 'Get Data':
             result = request.form
             if result.get('model') != '':
                 model = result.get('model')
                 form.mpg.data = cars.loc[cars['carModel'] == model]['combMPG'].values[0]
                 form.fueltype.data = cars.loc[cars['carModel'] == model]['fuelType'].values[0]
-
-
+        else:
+            pass
     return render_template("index.html", 
     form=form, radii=radii, carMakes = cars.carModel.values.tolist(),
     tables=[stationList.to_html(escape=False,index_names=False)],  stationList = stationList)

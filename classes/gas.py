@@ -1,5 +1,4 @@
 import math
-import math
 import requests
 import pandas as pd
 from geopy.distance import geodesic

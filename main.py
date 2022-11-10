@@ -1,15 +1,11 @@
 from flask import Flask, render_template, request
 from classes.forms import GasForm
 from classes.gas import *
-from geopy.geocoders import Nominatim
 import pandas as pd
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "amongus"
-def getLocation(address):
-    locator = Nominatim(user_agent="GassedUp")
-    location = locator.geocode(address)
-    return location.latitude, location.longitude 
+
 
 @app.route('/', methods=['GET', 'POST'])
 def home():

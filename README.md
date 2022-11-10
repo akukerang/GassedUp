@@ -14,14 +14,7 @@ Directions:
 6. Press submit
    - In cases, of internal server error. Reset the server.
 
-Requirements:
-- Pandas
-- Requests
-- Flask
-- Flask_wtf
-- wtforms
-- Geocoder
-- Geopy
+
 
 
 ![Form](/images/form.png)
